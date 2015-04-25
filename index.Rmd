@@ -1,0 +1,54 @@
+---
+title       : Motor Trend Car Road Tests
+subtitle    : Coursera Developing Data Products Course Project
+author      : Eric Koo
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Description
+
+This course project uses data from the mtcars dataset from the R datasets library. It allows the user to interactively compare the relationship between two variables at a time by displaying a scatterplot, best-fit line, and resulting linear model.
+
+---
+
+## Dataset
+
+### Motor Trend Car Road Tests
+
+The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973–74 models).
+
+```{r}
+library(datasets)
+head(mtcars)
+```
+
+---
+
+## Variables
+
+For the purposes of this project, only the following 6 continuous variables can be compared and plotted:
+
+- Miles/(US) gallon
+- Displacement (cu.in.)
+- Gross horsepower
+- Rear axle ratio
+- Weight (lb/1000)
+- 1/4 mile time
+
+---
+
+## Example Plot
+
+Miles/(US) gallon vs. Weight (lb/1000) 
+
+```{r, echo=FALSE}
+plot(mtcars$mpg, mtcars$wt)
+abline(lm(mtcars$wt~mtcars$mpg), col="red")
+```
+
