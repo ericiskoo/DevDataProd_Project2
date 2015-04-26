@@ -15,6 +15,10 @@ knit        : slidify::knit2slides
 
 This course project uses data from the mtcars dataset from the R datasets library. It allows the user to interactively compare the relationship between two variables at a time by displaying a scatterplot, best-fit line, and resulting linear model.
 
+- Link to Shiny App: https://ericiskoo.shinyapps.io/DevDataProd_Project1/
+- Link to Shiny App GitHub Repository: https://github.com/ericiskoo/DevDataProd_Project1
+- Link to Slides GitHub Repository: https://github.com/ericiskoo/DevDataProd_Project2
+
 ---
 
 ## Dataset
@@ -43,7 +47,7 @@ head(mtcars)
 
 ## Variables
 
-For the purposes of this project, only the following 6 continuous variables are allowed to be compared and plotted:
+For the purposes of this project, only the following 6 continuous variables can be compared and plotted:
 
 - Miles/(US) gallon
 - Displacement (cu.in.)
